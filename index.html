@@ -47,7 +47,41 @@
                             <label for="purchase_date">Data de compra<span class="required-field">*</span></label>
                             <input type="date" name="purchase_date" id="purchase_date" class="block" required>
                          </div>
-                <input type="submit" value="Enviar">
+                         <div class="box-input">
+                           <p>Tipo de cambio: <span class="required-fied">*</span></p>
+                           <input type="radio" name="manual" id="gear">
+                           <label for="manual">Manual</label>
+                           <input type="radio" name="auto" id="gear">
+                           <label for="auto">Automático</label>
+                         </div>
+                        <div class="optional-box">
+                            <p>opcionais</p>
+                            <ul class="optional-list">
+                             <li>
+                                <input type="checkbox" name="optional[]" id="airbag" value="airbag">
+                                <label for="airbag">Airbag</label>
+                             </li>
+                             <li>
+                                <input type="checkbox" name="optional[]" id="alarm" value="alarm">
+                                <label for="alarm">Alarme</label>
+                             </li>
+                             <li>
+                                <input type="checkbox" name="optional[]" id="ac" value="ac">
+                                <label for="ac">Ar Condicionado</label>
+                             </li>  
+                             <li>
+                                <input type="checkbox" name="optional[]" id="revarse_camera" value="revarse_camera">
+                                <label for="revarse_camera">Câmera de ré</label>
+                             </li> 
+                            </ul>
+                        
+                        <div class="box-input">
+                            <p>Fotos do carro: <span class="required-field">*</span></p>
+                            <input type="file" multiple accept="image/png, image/jpg"
+                            id="images" name="images" required>
+                        </div>
+                <input type="submit" value="Enviar"
+                class="btn-submit">
                 <input type="reset" value="Limpar">
             </form>
         </div>
